@@ -1,0 +1,85 @@
+﻿<html>
+ <head>
+ <title>목록 만들기</title>
+ </head>
+ <body>
+<h1> 목록 만들기 </h1>
+<h2> HTML 목록의 종류</h2>
+ <ul>
+ <li> Unordered List - 순서가 없는 목록</li>
+ <li> Ordered List - 순서가 있는 목록</li>
+ <li> Description List - 정의목록 </li>
+ </ul>
+
+<hr>
+ <h3> 1. &lt;ul&gt; Unordered List - 순서가 없는 목록</h3>
+ <ul>
+  <li>coffee</li>
+  <li>fruit-juice</li>
+  <li>tea</li>
+ </ul>
+
+ <h3> 2. &lt;ol&gt;Ordered List - 순서가 있는 목록</h3>
+ <ol>
+  <li>coffee</li>
+  <li>juice</li>
+  <li>tea</li>
+ </ol>
+
+<hr>
+<h5>문제 1. 연말에 추천하는 영화(5)를 순서대로 목록으로 만들기</h5>
+<ol>
+  <li>Love Actually</li>
+  <li>Home Alone</li>
+  <li>Parent Trap</li>
+  <li>LALA LAND</li>
+  <li>Pola Express</li>
+</ol>
+
+
+<h5>문제 2. 복습하고 싶은 과목(4)을 순서없이 목록으로 만들기</h5>
+<ul>
+  <li>JSP</li>
+  <li>Java</li>
+  <li>html</li>
+  <li>DB</li>
+</ul>
+<hr>
+
+<h3>ul type = "disc / circle / square" </h3>
+<h3>ol type = "1 / a / A / i / I"</h3>
+  <ul type="square">
+    <li> square </li>
+  </ul>
+
+ <h3> 3. &lt;dl&gt;Description List - 정의목록 </h3>
+ <dl>
+  <dt>non-coffee의 종류는?</dt>
+  <dd>juice</dd>
+  <dd>tea</dd>
+  <dt>coffee의 종류는?</dt>
+  <dd>espresso</dd>
+  <dd>americano</dd>
+  <dd>cafe latte</dd>
+ </dl>
+<hr>
+<h1> 하위목록 만들기 (목록 안에 목록 넣기)</h1>
+ <ul>
+  <li>coffee
+    <ol>
+     <li>espresso</li>
+     <li>cafe latte</li>
+     <li>capuccino</li>
+    </ol>
+  </li>
+
+  <li>tea
+   <ul>
+    <li> green tea</li>
+    <li>black tea</li>
+   </ul>
+  </li>
+    
+
+ </body>
+</html>

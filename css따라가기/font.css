@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/*
+font-family: 'Single Day', cursive;
+font-family: 'Stylish', sans-serif;
+ */
+
+body {font-family: 'Noto Sans KR', sans-serif;
+ font-size: 14px;
+ color: #333;}
+
+/* html {font-size: 10px;} */
+
+h1 {color: olive;}
+
+.ffm-sty {font-family: 'Stylish', sans-serif;}
+
+#sec01 {font-size: 20px;}
+
+  /* font-size */
+.fs01 {font-size: 16px;
+color: #009;}
+
+.fs02 {font-size: 12px;}
+.fs03 {font-size: 20px;}
+.fs04 {font-size: 1em;}
+.fs05 {font-size: 1.25em;}
+.fs06 {font-size: 1rem;}
+.fs07 {font-size: 1.25rem;}
+
+
+ /* font-weight */
+.fw01 {font-weight: 100;}
+.fw02 {font-weight: 200;}
+.fw03 {font-weight: 300;}
+.fw04 {font-weight: 400;}
+.fw05 {font-weight: 500;}
+.fw06 {font-weight: 600;}
+.fw07 {font-weight: 700;}
+.fw08 {font-weight: 800;}
+.fw09 {font-weight: 900;}
+.fw-b {font-weight: bold;}
+.fw-n>b {
+/* 
+ A>B 는 관계선택자 중에서 자식선택자. 
+ A의 바로 한단계 아래에 B가 있는 조건을 만족할 때
+*/	
+font-weight: normal;
+color: #900;}
+
+
+ /* font-style  글자 기울기 */
+.fst01 {font-style: italic;}
+.fst02 {font-style: oblique;}
+.fst03>i {font-style: normal;
+color: #900;}
+
+.fst03>i:hover {
+/* A:hover는 요소A에 마우스 오버한 상태일 때 
+속성을 지정할 수 있는 상태선택자 */
+font-style: italic;	}
+
+
+
+ /* font-family: ; 글꼴(서체) */
+
+.ffm01 {font-family: "Georgia", "Times New Roman", serif;}
+.ffm02 {font-family: "Verdana", "Arial", sans-serif; }
+/* fonts.google.com
+
+font-family: 'Cute Font', cursive;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+ */
+.ffm04 {font-family: 'Cute Font', cursive;}
+.ffm05 {font-family: 'Nanum Pen Script', cursive;}
+.ffm06 {font-family: 'Single Day', cursive;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+html {
+scroll-behavior: smooth;
+/* 부드러운 스크롤  */}
+
+
+.pre {white-space: pre;
+ /* 공백처리 - 그대로 */}
+
+
+
+/* position:sticky; 
+relative와 fixed를 믹스. ~에서 고정 */
+
+nav#top-nav {
+background-color: #7da;
+padding: 1em;
+font-size: 2em;
+position: sticky;	
+top:0;
+z-index: 9999;}
+
+
+
+ /* position:static; (기본값)변화 없음 */
+#sec01>p {border: 1px solid;
+position: static;
+left: 800px;}
+
+
+/* position:relative; 
+현재 위치에서 ~에 위치 */
+#sec02>p {border: 1px solid;
+width:400px; height:30px;
+color: #009;}
+
+.rel01 {position: relative;
+ left: 800px;}
+
+.rel02 {position: relative;
+ right: 300px;}
+
+.rel03 {position: relative;
+ top:400px;}
+
+.rel04 {position: relative;
+bottom: 250px;}
+
+#sec02:hover>.rel05 {
+position: relative;
+left: 700px; bottom: 300px; }
+
+.rel06 {position: relative;
+ right: 200px; bottom: 200px;}
+
+.rel07 {position: relative;
+ left: 50%;}
+
+#sec02:hover>p {position:static;}
+
+
+
+/* position:absolute; 
+상위요소를 기준으로 ~에 위치 */
+
+#sec03>p {border: 1px solid;
+background-color: rgba(255,155,255,0.6);
+width:200px; height:50px;
+color: #900;}
+
+#sec03 {position: relative;
+      /* 기준이 될 상위요소의 설정*/
+ height: 500px;
+ overflow: hidden;
+ /* 영역밖의 내용처리 - 숨김 */}
+#sec03>h2>span {
+font-style: italic;
+font-size: 0.7em;
+color: #fff;
+text-decoration: underline;}
+  
+.ab01 {position: absolute;
+    /* relative인 상위요소를 기준으로 위치하기*/
+ left: 800px;}
+.ab02 {position: absolute;
+right: 500px;}
+.ab03 {position: absolute;
+ top:10px;}
+.ab04 {position: absolute;
+ bottom: 10px;}
+.ab05 {position: absolute;
+ right: 0;  bottom: 0;}
+.ab06 {position: absolute;
+ top:-500px;}
+
+#sec03:hover>.ab06 {
+top:300px;	
+background-color: rgba(0,0,0,0.8);
+color:#fff;
+transition:2s;
+}
+
+#sec03>div {border: 3px solid;
+background-color: #aee;
+width:100px; height:150px;
+position: absolute;}
+
+.div-1 {color: #900;
+ left: 100px; top:200px;}
+ 
+ #sec03:hover>.div-1 {
+ z-index: 100;
+ left: 230px;
+ transition:2s;}
+ 
+.div-2 {color: #990;
+ left: 130px; top:220px;}
+.div-3 {color: #909;
+ left: 160px; top:240px;}
+.div-4 {color: #009;
+ left: 190px; top:260px;}
+
+
+nav#quick {
+border: 1px solid;
+width: 200px;
+background-color: #000;	
+position: fixed;
+right: -170px; bottom: 50px;}
+
+nav#quick:hover {
+right: 0; } 
+
+nav#quick a {background-color: #777;
+width: 160px; height: 20px;
+margin-bottom:6px;
+display: block;}
+
+nav#quick a:link, nav#quick a:visited {
+color: #fff;	
+text-decoration: none;}
+
+nav#quick a:hover, nav#quick a:active {
+color: #f00; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+header { border: 1px solid red; 
+height: 100px;}
+article { border: 1px solid red;
+height: 800px;}
+section { border: 1px solid blue;
+height: 800px; width: 300px/* <-정확한 값 아님 */;
+display:inline-block;  }
+div { border: 1px solid red; }
+
+/* 
+           [ htm 팁~! ]
+ 태그 순서는 위에서 아래로, 한 줄 안에서는 좌에서 우의 차례.
+ 
+
+           [ css팁~! ]
+ 1. 레이아웃 작업시에 꼭 border를 넣어서 작업하고 완성후 삭제
+   ( box-sizing:border-box; 기억 
+  - 요소의 크기 계산시 패딩과 테두리까지를 포함하여 표현됨)
+    
+ 2. 나란히 배치할 수 없는 요소를 나란히 할 때의 방법
+   a. float을 줬으면 그 다음 요소가 밀고 올라왔을때 clear:both; 로 처리,
+   b. display로 성격을 바꿔서 한 줄에 나란히 온 요소들끼리의
+          수직정렬은 vertical-align:top; 로 처리. (윗선에 맞춰서 정렬됨)
+  
+  (a,b 방법 모두 margin으로 세부적인 위치 좀 더 조절 )
+   
+ 3. list-style로 목록 앞의 기본 모양을 바꾸거나 없애거나
+      이미지로 대체 처리 가능 
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+

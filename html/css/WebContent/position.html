@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="style.css" rel="stylesheet">
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+<h1>position 요소의 위치 지정방식</h1>
+<ul>
+ <li>position:static; (기본값) 변화 없음</li>
+ <li>position:relative; 현재 위치에서 ~에 위치</li>
+ <li>position:absolute; 상위요소를 기준으로 ~에 위치</li>
+ <li>position:fixed; 브라우저를  기준으로 ~에 고정</li>
+ <li>position:sticky; relative와 fixed를 믹스. ~에서 고정</li>
+</ul>
+
+<nav id="top-nav">
+ <a href="sec05"> position:sticky;</a>
+</nav>
+
+
+
+
+<h2>거리값 (위치) 지정</h2>
+<ul>
+ <li>left:n; 단위는 px,%,em, ... (음수값 가능)</li>
+ <li>right:n;</li>
+ <li>top:n;</li>
+ <li>bottom:n;</li>
+</ul>
+
+<h2>z-index:n; (음수값 가능)</h2>
+<p class="pre">
+ 겹치는 요소끼리의 위아래 순서 조정 가능.
+ 값이 클수록       상대적으로 위로 올라옴.
+     소스상에 먼저 입력한 요소가 값이 작고 순서대로 1씩 증가함.
+</p>
+
+<section id="sec01">
+ <h2>position:static; (기본값) 변화 없음</h2>
+
+ <p>position:static; left: 800px;</p>
+</section>
+
+<section id="sec02">
+ <h2>position:relative; 현재 위치에서 ~에 위치</h2>
+
+ <p class="rel01">position:relative; left:800px;</p>
+ <p class="rel02">position:relative; right: 300px;</p>
+ <p class="rel03">position:relative; top:400px;</p>
+ <p class="rel04">position:relative; bottom: 250px;</p>
+ <p class="rel05">position:relative;
+    left: 700px; bottom: 300px;  </p>
+ <p class="rel06">position:relative;
+ right: 200px; bottom: 200px;</p>
+ <p class="rel07">position:relative; left: 50%;</p>
+</section>
+
+<section id="sec03">
+ <h2>position:absolute; 상위요소를 기준으로 ~에 위치
+  <span>(기준이 될 상위요소 position: relative; 설정)</span>
+ </h2>
+
+ <p class="ab01">position:absolute; left: 800px;</p>
+ <p class="ab02">position:absolute; right:500px;</p>
+ <p class="ab03">position:absolute; top:10px;</p>
+ <p class="ab04">position:absolute; bottom:10px;</p>
+ <p class="ab05">position:absolute; right: 0; bottom: 0;</p>
+ <p class="ab06">position:absolute; top:-500px;</p>
+
+ <div class="div-1">div-1</div>
+ <div class="div-2">div-2</div>
+ <div class="div-3">div-3</div>
+ <div class="div-4">div-4</div>
+</section>
+
+<nav id="quick">
+ <ol>
+  <li><a href="#sec01">position:static;</a></li> 
+  <li><a href="#sec02">position:relative;</a></li> 
+  <li><a href="#sec03">position:absolute;</a></li> 
+  <li><a href="#sec04">position:fixed;</a></li> 
+  <li><a href="#sec05">position:sticky;</a></li> 
+ </ol>
+</nav>
+
+<section id="sec04">
+ <h2>position:fixed; 브라우저를 기준으로 ~에 고정</h2>
+ <p class="pre">
+  브라우저창을 기준으로 해서 특정 위치에 고정이 됨.
+  스크롤과도 무관한 고정위치
+ </p>
+</section>
+
+<section id="sec05">
+ <h2>position:sticky; relative와 fixed를 믹스. ~에서 고정</h2>
+ <p class="pre">
+  스크롤 되다가 특정 위치에서부터는 고정됨.
+   position:sticky로 하려면 ! 
+        자신을 둘러싼 다른 상위요소가 없어야 함. 
+ </p>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

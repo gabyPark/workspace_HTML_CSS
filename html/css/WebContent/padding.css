@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+ /* padding: n; */
+section>p {border: 1px solid;}
+.pdn01 {padding: 50px;}
+.pdn02 {padding: 2em;}
+.pdn03 {padding: 15%;}
+.pdn04 {width: 455px;
+padding: 20px;}
+
+
+/* padding: n n ; */
+.pdnn01 {padding: 0 50px;}
+.pdnn02 {padding: 50px 0;}
+
+.pdnn05 {padding: 0.5em 1em;}
+
+nav>a {border: 1px solid;
+padding: 0.3em 0.7em;}
+
+nav>a:hover {
+background-color: #3ee;	}
+
+
+
+ /* padding: n n n; */
+.pdn3 {border: 2px solid;
+ padding: 15px 15px 150px;
+ opacity: 0.2;
+ /* 요소의 투명도 지정(0~1사이의 값) */ }
+
+.pdn3:hover {
+ opacity: 1;	
+ transition:2s;
+ /* n초동안 속성의 변화를 보여줌 */}
+
+
+ /* padding: n n n n; */
+
+
+section>input:nth-of-type(1) {
+ padding: 20px 0 0 0; } 
+ 
+section>input:nth-of-type(2) {
+	padding: 0 20px 0 0 ;}
+
+section>input:nth-of-type(3) {
+padding: 0 0 20px 0 ;}
+
+section>input:nth-of-type(4) {
+padding:0 0 0 20px ;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

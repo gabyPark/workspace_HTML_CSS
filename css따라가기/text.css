@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+ /* text-align 글자의 수평 정렬 */
+#sec01>p {/* 
+A>B 는 상위요소 A안에 하위요소B가 위치한 조건일 때 
+속성을 줄 수 있는 관계선택자 (부모자식 관계)
+  */
+ border: 1px solid; 
+ width: 600px;} 
+
+.tal01 {text-align: left;}
+.tal02 {text-align: center;}
+.tal03 {text-align: right;}
+.tal04 {text-align: justify;}
+
+
+ /* text-decoration 글자의 줄들 */
+
+#sec02>p {
+	font-size: 20px;
+	font-weight: bold; }
+
+.tde01 {text-decoration: overline;}
+.tde02 {text-decoration:line-through;}
+.tde03 {text-decoration: underline;}
+.tde04 {text-decoration: none;}
+.tde04:hover {/* 
+A:hover는 요소A에(영역) 마우스를 
+올렸을 때의 속성을 지정하는 상태선택자  */
+	text-decoration: underline;
+	color: #630;}
+
+
+ 
+ 
+ /* text-indent 들여쓰기 */
+.tin01 {text-indent: 50px;}
+.tin02 {text-indent: 10%;}
+.tin03 {text-indent: -3em;}
+.tin03:hover {
+text-indent: 0;	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

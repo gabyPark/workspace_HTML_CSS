@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+nav {background-color: pink;
+height: 50px;
+margin: 3em 0;}
+
+nav>ul {list-style:none;
+/* 목록앞의 모양 - 제거 */}
+
+#nv-lft li {
+background-color:#520;
+float: left;/* 메뉴들 나란히 배치 */
+margin-right: 10px;	
+margin-top: 10px;
+}
+
+
+ /* 우측 메뉴  */
+#nv-rgt>ul {
+ border: 1px solid red;	
+ float: right;/* 우측 메뉴용 */
+ margin: 0;
+}
+
+#nv-rgt li {
+ background-color: #260;
+ float: left;/* 메뉴들 나란히 배치 */
+ margin-right: 10px;
+ margin-top: 15px;		
+}
+
+
+
+nav li:hover {
+background-color:#e50; }
+
+nav a {padding:0.7em 0.3em;
+text-decoration: none;
+text-transform: capitalize;}
+
+nav a:link, nav a:visited {
+ color: #fff; }
+nav a:hover, nav a:active {
+ color: #520; }
+	
+
+
+
+section img {
+ width: 250px; 
+ height: 250px;	}
+
+#sec01 img {
+ float: left; 
+ margin-right: 1em;}
+	
+#sec02 img {
+ float: right; 
+ margin-left: 1em;}	
+	
+#sec02>p {
+ text-align: right;	}
+
+#sec01, #sec02  {
+/* A, B, C, ... 는 그룹선택자
+동시에 여러선택자를 불러와 
+같은 스타일을 적용함  */
+width: 40%;
+float: left;
+margin-right: 1.5%;	
+}
+
+#sec03 {
+ clear: both;	
+ /* float의 영향을 해제시킴 */
+ 
+ overflow:hidden;
+ /* 자식들이 float으로 부모를 벗어나면
+ 부모의 높이값은 줄어듦.
+ 부모의 형태를 유지하려면  overflow:hidden;
+ 을 줌*/}
+
+#sec03>p {border: 1px solid;	
+ float: left;
+ width: 30%;}
+
+
+#sec04 {clear: both; }
+
+#sec04 {overflow: hidden;}
+
+#sec04>p {border: 1px solid red;
+float: right;
+width: 25%; }
+
+#sec05 {clear: both;/*
+float의 영향 해제 */
+
+overflow: hidden;/* 
+부모의 형태 유지 */}
+
+#sec05>p {
+ background-color: #aef;
+ width: 25%;}
+
+.p-lft {float: left;}
+.p-rgt {float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

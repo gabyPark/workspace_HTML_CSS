@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>form-2</title>
+ </head>
+ <body>
+<nav>  
+ <a href="test05.htm">form-1</a> 
+ <a href="test05-1.htm">form-2</a> 
+</nav>
+ 
+<form action="test2.jsp" method="POST">
+<hr>
+<h1>form-2</h1>
+ <hr>
+<h2>1. 폼요소들을 주제별로 분류(그룹화)하기</h2>
+<p>
+  <b>fieldset태그</b>로 폼요소들을 주제별로 분류하여 그룹화 시킬 수 있다.   <br>
+  fieldset의 제목 또는 주제는 <b>legend태그</b>로 나타낸다.
+</p>
+
+ <fieldset>
+  <legend>필수 항목</legend>
+  
+  <label>Name <input type="text"> </label> <br>
+  <label>Birthday <input type="text"> </label> <br>
+  <label>Password <input type="password"> </label>  
+ </fieldset>
+ <fieldset>
+  <legend>선택 항목</legend>
+
+  <label>Nick Name <input type="text"> </label> <br>
+  <label>D-day <input type="text"> </label>
+ </fieldset>
+
+ <hr>
+<h2>2. html5에서 추가된 input type의 값들</h2>
+<p>
+  <b>모바일환경</b>에서 사용자의 편리성을 추구하고 <br>
+   개발자 입장에서도 웹표준을 준수하여 개발하기 용이함.
+</p>
+
+<h3>input type="time"</h3>
+<p>
+  시간을 <b>(오전/오후 시분)</b> 선택할 수 있는 폼요소<br>
+</p>
+<label>time <input type="time"></label>
+
+<h3>input type="date"</h3>
+<p>
+  날짜를 <b>(년월일)</b>  선택할 수 있는 폼요소<br>
+  min과 max 속성으로 최소값, 최대값을 지정할 수 있다.
+</p>
+<label>date <input type="date"></label><br>
+
+<label>min="1900-01-01" max="2100-12-31"
+ <input type="date" min="1900-01-01" max="2100-12-31"></label><br>
+
+
+<h3>input type="datetime-local"</h3>
+<p>
+  날짜와 시간을<b>(년월일 오전/오후 시분)</b> 선택할 수 있는 폼요소<br>
+</p>
+<label>datetime-local <input type="datetime-local"></label>
+
+<h3>input type="week"</h3>
+<p>
+  날짜를 <b>(년주)</b> 선택할 수 있는 폼요소<br>
+</p>
+<label>week <input type="week"></label>
+
+<h3>input type="month"</h3>
+<p>
+  날짜를 <b>(년월)</b> 선택할 수 있는 폼요소<br>
+</p>
+<label>month <input type="month"></label>
+
+
+<h3>input type="tel"</h3>
+<p>
+  연락처를 <b>(전화번호)</b> 입력할 수 있는 폼요소<br>
+  모바일브라우저에서는 가상키패드가 숫자형식으로 바뀔 수 있고
+  전화 걸기가 가능하다.
+</p>
+<label>tel <input type="tel"></label>
+
+<h3>input type="email"</h3>
+<p>
+  연락처를 <b>(이메일)</b> 입력할 수 있는 폼요소<br>
+  모바일브라우저에서는 가상키패드가 영문 입력이 쉽게 바뀔 수 있고<br>
+  브라우저 자체에서 알맞은 이메일 형식인지 체크해줌 (@, @뒤의 내용)
+</p>
+<label>email <input type="email"></label>
+
+<h3>input type="url"</h3>
+<p>
+  연락처를 <b>(웹주소)</b> 입력할 수 있는 폼요소<br>
+  모바일브라우저에서는 가상키패드가 영문 입력이 쉽게 바뀔 수 있고<br>
+  브라우저 자체에서 알맞은 웹주소 형식인지 체크해줌 
+  (프로토콜 https:// 나 http://의 유무)
+</p>
+<label>url <input type="url"></label>	
+
+<h3>input type="number"</h3>
+<p>
+  <b>숫자값을</b> 입력(선택)할 수 있는 폼요소<br>
+ min, max, step 속성으로 최소값, 최대값, 증감간격을 지정할 수 있다.
+</p>
+<label>number <input type="number"></label> <br>
+
+<label>min="0" <input type="number" min="0"></label> <br>
+<label>max="100" <input type="number" max="100"></label> <br>
+<label>step="3"  <input type="number" step="3"></label> <br>
+
+<h3>input type="range"</h3>
+<p>
+  <b>범위내의 값을 </b>선택 할 수 있는 폼요소<br>
+</p>
+<label>range <input type="range"></label>
+
+
+<h3>input type="color"</h3>
+<p>
+  <b>색상</b>을 선택 할 수 있는 폼요소<br>
+</p>
+<label>color <input type="color"></label>
+
+<h3>input type="search"</h3>
+<p>
+  <b>검색창</b>을 지정 할 수 있는 폼요소 (삭제기능버튼)<br>
+</p>
+<label> <input type="search"></label>
+
+
+
+
+ <hr>
+<h2>3. 유용한 input의 속성들</h2>
+
+<h3>1. autofocus</h3>
+<p>
+  해당 요소에 <b>자동으로 포커싱 되는 </b> 속성 <br>
+</p>
+<label>autofocus <input type="text" autofocus></label>
+
+<h3>2. autocomplete="on/off"</h3>
+<p>
+  <b>자동완성 기능을</b> 켜거나 끄는 속성 <br>
+</p>
+<label for="id">id</label> <input type="text" autocomplete="off" id="id">
+
+<h3>3. required</h3>
+<p>
+  <b>필수입력</b>으로 지정하는 속성 <br>
+</p>
+<label>required <input type="text" required></label>
+
+<h3>4. placeholder="..."</h3>
+<p>
+  <b>입력 예시나 설명</b> 등을 표시하는 속성<br>
+</p>
+<label>phone number <input type="text" placeholder="010-777-9999"></label> <br>
+<label>password <input type="password" placeholder="영문과숫자조합으로 12자이내" size="30"></label>
+
+<h3>5. readonly </h3>
+<p>
+  <b>읽기만 가능한</b> 폼요소로 지정하는 속성 (수정불가, 값은 전송 가능)  <br>
+</p>
+<label> <input type="text" value="A" readonly>조</label>
+
+<h3>6. disabled </h3>
+<p>
+  <b>비활성화</b>된 폼요소로 지정하는 속성 (수정불가, 값 전송불가)  <br> 
+</p>
+<label> <input type="text" value="A" disabled>조</label>
+
+
+
+<hr>
+ <input type="submit">
+ <input type="reset">
+</form>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+

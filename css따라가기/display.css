@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/*   css초기화소스, 기본 여백 모두 제거
+   * {margin: 0;
+      padding: 0; }  
+*/
+nav li {/* border: 1px solid red; */
+display: inline-block; 
+vertical-align: top;
+/* vertical-align
+   한줄에 나란히 오는 요소끼리의 수직 정렬 지정.
+  (표의 셀 안에서 컨텐츠의 수직 정렬도 지정가능)
+ */
+margin: 10px;}
+
+#sub {display: none;}
+.mn:hover>#sub {
+display: block;}
+
+
+label, input {border:none;
+ background-color: #ccc;	
+ width: 150px;
+ height: 26px;
+ display: inline-block;}
+
+label {text-align: center; 
+ text-transform: uppercase;}
+
+#box01, #box02 {
+/* border: 1px solid red;	 */
+display: inline-block;
+vertical-align: top;
+margin-top: 50px;}
+
+#box01 {margin-right: 30px;}
+
+
+
+
+
+#sec01>a, #sec01>b {
+border: 1px solid;
+width: 200px;
+height:30px;
+margin: 30px;
+display: block;}
+
+
+
+
+#sec02>div, #sec02>p {
+	border: 1px solid;
+	width: 150px;
+	height: 50px;
+	margin: 30px;
+	display: inline;	  }
+
+
+#sec03>*:not(h2) {
+/* 부정선택자 A:not(B)는  
+A중에서 B를 제외한 것을 선택함 */
+border: 1px solid;	
+width: 150px; height: 40px;
+margin: 30px;
+display: inline-block;}
+
+#sec04>*:not(h2) {
+border: 1px solid;
+background-color: #ae0;	
+margin:0.25em;
+padding: 0.5em;}
+
+.none {display: none;}
+
+#sec04:hover>b.none {
+ display: inline;	}
+
+
+#sec04:hover>div.none {
+display: block; }
+
+.div4 {font-size: 1.2em;
+font-weight: bold;
+color: #590;}
+
+.div4-1 {
+height: 100px;	
+background-color: #fff !important;
+color:#590;
+display: none;}
+
+.div4:hover+.div4-1 {
+ /*
+1.형제 관계선택자 A+B 는 A의 바로 뒤에 오는
+   B만 불러오는 인접형제 선택자.
+2.형제 관계선택자  A~B 는 A의 뒤에 오는
+    모든 B를 불러오는 형제 선택자.     */
+	
+ display: block;	} 
+
+
+
+.hid {visibility: hidden;}
+
+
+#sec04>h2:hover+i.hid {
+	visibility: visible; }
+
+
+
+#sec04>h2:hover~p.hid {
+	visibility: visible; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

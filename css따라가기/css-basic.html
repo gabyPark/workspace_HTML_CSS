@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+ h2 {border-bottom: 3px solid gray;}
+
+ #h2-1 {display:none; }
+
+ .red {color: red;}
+ .gr {color: green;}
+ .bl {color: blue;} 
+ 
+ .bg-sky {background-color: skyblue;} 
+ .bg-br {background-color: brown;}
+ .br-pn {background-color: pink;}
+ .br-ye {background-color: yellow;}
+ 
+ .gr-br {color: green;
+    background-color: brown;} 
+ 
+</style>
+</head>
+<body>
+<h1 class="gr">css basic</h1> 
+<!-- http://www.csszengarden.com/ -->
+
+<h2 id="h2-1">css구문</h2>
+<pre class="bg-sky">
+ 선택자 {속성:속성값;
+    속성:속성값;
+    속성:속성값;
+     ...
+   }
+</pre>
+
+<h2>css적용법 3가지</h2>
+ <ol>
+  <li class="red br-pn">External CSS - 외부파일 방식. 스타일소스를 "*.css"라 따로 분리하여 만들고 
+    html문서에 연결시켜 적용.<br>
+      통일성 있는 스타일 적용이 가능하며 유지보수에 유리.
+  </li>
+  <li class="gr br-ye">Internal CSS - 내장방식. 스타일소스를 html문서의 head안에 넣어서 적용. <br>
+      해당 웹페이지에만 스타일이 적용됨.
+  </li>
+  <li style="color:blue;">Inline CSS - 인라인방식. 해당 태그 바로  뒤에 스타일소스를 적용. <br>
+   소스가 길어지고 통일성 있는 스타일 적용이 불가하며 유지보수에 불리. <br>
+   외부파일을 연결할 수 없거나 웹페이지의 본문만 수정 가능한 상황에서는 불가피하게 사용.
+   (임대쇼핑몰이나 블로그 등)<br>
+  세가지 방식 중 CSS적용 우선 순위가 가장 높다는 장점이 있음. 
+  </li>
+ </ol>
+
+<h2>css선택자 대표 3가지</h2>
+<ol>
+ <li><span class="bl">tag</span> 선택자 - <span class="bl">p</span> { }  <br>
+   해당 tag 전체에 적용됨. (자동, 강제 적용)
+ </li>
+ <li><span class="red">ID</span> 선택자 - <span class="red">#p</span> { }  <br>
+  구조적인 목적에 주로 사용. (ID값은 중복 적용이 불가하므로)
+ </li>
+ <li><span class="gr">Class</span> 선택자 - <span class="gr">.p</span> { }  <br>
+   디자인적인 목적에 주로 사용. <br>
+  (class값은 중복 적용이 가능하므로 여러 요소에 같은 스타일 적용 가능)
+  (class값을 조합하여 사용 가능)
+ </li>
+</ol>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

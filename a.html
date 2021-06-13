@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>a 태그로 링크 걸기</title>
+</head>
+<body>
+<nav>
+ <a href="a.html#star">링크-1(상대경로)</a>
+ <a href="a-1.html">링크-2</a>
+</nav>
+<hr>
+
+<h1>a 태그로 링크 걸기</h1>
+
+<h2>링크를 여는 방식 지정 속성 - target</h2>
+<ul>
+ <li>target="_self" 기본값. 현재 링크 텍스트가 있는 위치에 그대로 열어줌</li>
+ <li><b>target="_blank" 새 탭에 열어줌</b></li>
+ <li>target="_top" 프레임 구조없이 전체에 하나로 열어줌</li>
+ <li>target="_parent" 상위창에 열어줌</li>
+</ul>
+
+<h2>절대경로로 링크 걸기</h2>
+<a href="https://www.w3schools.com/html/html_links.asp">
+https://www.w3schools.com/html/html_links.asp</a>
+
+<p>target="_blank" 추가
+ <a href="https://www.naver.com/" target="_blank">naver</a>
+</p>
+
+<h2 id="star">상대경로로 링크 걸기</h2>
+<ol>
+ <li>링크로 html문서(htm/html 웹문서) 보여주기 <a href="img.html">html (image)</a></li>
+ <li>링크로 이미지(jpg/gif/png 파일) 보여주기 
+           <a href="img/cat.jpg" target="_blank">cat</a>
+           <a href="img/smiley.gif">My face</a>
+ </li>
+ <li>링크로  (mp4/ogg/webm 파일) 보여주기    <a href="img/forest.mp4" target="_blank">forest</a></li>
+ <li>링크로  (txt 파일) 보여주기    <a href="폼테스트용 텍스트.txt">폼테스트용 텍스트 </a> </li>
+ <li>링크로  (zip or hwp ... 파일 - 웹브라우저가 처리 불가한 파일들)을 연결하면 다운로드가 됨. 
+    <a href="html.zip">html수업 압축파일 </a> </li>
+</ol> 	
+
+<hr>	
+<h1>이미지에 링크 걸기</h1>	
+<pre>
+ &lt;a href="보여줄(이동할) 경로(주소)" title="툴팁 내용"&gt;
+  &lt;img alt="이미지 대체텍스트" src="이미지 경로"&gt;
+ &lt;/a&gt;
+</pre>
+
+<a href="img/forest.mp4" target="_blank" title="숲의 풍경 영상감상">
+<img alt="숲의 풍경" src="img/car.jpg"></a>
+
+<a href="img/manhattan.jpg" target="_blank">
+ <img alt="manhattan" src="img/manhattan.jpg" width="100" title="맨하탄 사진크게 보기"></a>
+
+<a href="https://www.daum.net/" target="_blank" title="daum GOGO~~~!">
+ <img alt="daum" src="img/daum-logo.png" width="140"></a>
+ 
+
+<hr>	
+<h1>이메일 링크 걸기</h1>	
+<pre>
+ &lt;a href="<b><mark>mailto:</mark>이메일주소"</b>&gt;
+   텍스트 
+ &lt;/a&gt;
+</pre> 
+ 
+<p> 
+ <a href="mailto:class@itwillbs.co.kr">아이티윌 부산교육센터</a>  <br>
+ <a href="mailto:itreset@daum.net">my name</a> <br>
+ <a href="mailto:class@itwillbs.co.kr">class@itwillbs.co.kr</a> <br>
+ 
+ <a href="mailto:class@itwillbs.co.kr" title="아이티윌 부산교육센터 이메일보내기"> 
+  <img alt="아이티윌 부산교육센터 이메일보내기" src="img/logo.png"></a>
+</p> 
+ 
+ 
+<hr> 
+<h1>페이지 최상단으로 이동하는 탑 링크(임시링크)</h1>
+ <a href="#">TOP</a>
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

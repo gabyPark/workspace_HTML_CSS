@@ -1,0 +1,63 @@
+@charset "UTF-8";
+h1 { margin: 3em auto; }
+
+li {line-height: 2;
+margin-bottom: 1.5em;}
+
+body {
+/*  background-image: url("img/orange.jpg");	
+ background-repeat: repeat;
+ background-size:20% 200px;
+ background-position:10px 3px;
+ background-attachment: fixed; */
+ font-size: 18px;  }
+ 
+ section>div {
+ border: 1px solid;
+ margin: 2em 1em;
+ width: 25%; height: 200px;
+ font-size: 30px;
+ line-height: 1.8;
+ overflow: auto;
+ display: inline-block;
+ background-image: url("img/manhattan.jpg");
+ color: #fff;}
+ 
+.at01 {background-attachment: scroll;} 
+.at02 {background-attachment: fixed;}
+.at03 {background-attachment: local;}
+ 
+ 
+.bg-img-p { border:1px solid;
+height: 500px;
+overflow: auto;
+background-image: url("img/flower.jpg");	
+background-repeat: no-repeat;
+background-position: 0 0 ;
+background-size: 200% 200%; 
+/* background-attachment: local; */
+color: #fff;
+font-size: 30px; } 
+  
+.bg-img-p:hover {/* A:hover는
+요소에 마우스오버시의 상태를 지정하는 상태선택자 */
+background-position: -200px -300px ;
+background-size: 100% 100%;
+transition:3s;/* 단순한 애니메이션 효과
+n초동안 속성값의 변화를 보여줌 */	}  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

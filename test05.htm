@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>form-1</title>
+</head>
+
+<body>
+
+<nav>
+ <a href="test05.htm"> form-1 </a><br>
+ <a href="test05-1.htm">  form-2 </a>
+</nav>
+
+<h1>form으로 사용자와 연결하는 페이지 구성하기</h1>
+<p>
+ form 태그 영역으로 사용자가 손쉽게 정보를 입력하고 <br>
+ 요청을 서버에 전달할 수 있도록 웹페이지를 구성할 수 있다. <hr>
+
+action : 입력한 정보를 전달받을 서버측의 프로그램(파일)을 저장. <br>
+method : 입력한 정보를 전달하는 방식을 지정<br>
+(일반적으로는 post, 정보가 짧고 보안상의 우려가 없는 경우는 get을 사용)<br>
+</p>
+
+<h3>다양한 form 요소들</h3>
+<h4>1. input type="text" : (주관식) 한 줄 글상자</h4>
+<p>
+input 의 내용을 설명하는 텍스트는 태그로 묶어준다. <br>
+input 과 label 을 서로 연결시키기 위해 input에는 id를,  <br>
+label에는 for를 추가하고 그 값을 서로 일치시킨다.
+</p>
+
+<form action="test.jsp" method="post">
+ <label for="nm">Name</label> <input type="text" id="nm">
+ <label for="id">ID</label> <input type="text" id="id" maxlength="10">
+
+
+<h4>2. input type="password" : (주관식) 암호 글상자 </h4>
+<p>
+text 와 거의 같으나 화면에 값이 노출되지 않음
+</p>
+ <label for="pw">Password</label> <input type="password" id="pw">
+ <label for="sn">주민번호 뒷자리</lable> <input type="password" id="sn" maxlength="7">
+
+
+<h4>3.  textarea ... /textarea :  </h4>
+<p>
+시작과 종료태그 한 쌍으로 구성되며, <br>
+cols="n" 로 가로 크기를, rows="n" 세로 크기를 지정할 수 있다.
+</p>
+<textarea</textarea>
+   <textarea cols="50" row="8">
+  cols="50" rows="8"을 추가함
+  </textarea>
+
+
+<h4>4. input type="checkbox" : 체크박스 (다중 선택형의 객관식)</h4>
+ <p>제시한 항목들 중에서 사용자가 2개 이상 선택할 수 있도록 한다.<br>
+  처음에 미리 선택되어질 항목에는(초기값) 
+  <b>checked="checked" (checked)</b> 속성을 추가하면 됨.
+
+<p>방문 상담을 희망하는 시간은?</p>
+<label><input type="checkbox">pm. 1</label>
+<label><input type="checkbox">pm. 2</label>
+<label><input type="checkbox">pm. 3</label>
+
+<p> 복습이 필요한 과목은?<br>
+ <label> <input type="checkbox" checked> WEB </label>
+ <label> <input type="checkbox"> JAVA </label>
+ <label> <input type="checkbox"> DB </label>
+ <label> <input type="checkbox" checked> JSP </label> 
+</p>
+
+
+ <h4>5. input type="radio" - (단일 선택형의 객관식) 라디오버튼  </h4>
+ <p>제시한 항목들 중에서 사용자가 1개만 선택할 수 있도록 한다.<br>
+  같은 질문의 항목들 그룹에는 
+   서로 중복 체크가 되지 않도록 <b>name속성의 값을 일치</b>시킨다.<br>
+  처음에 미리 선택되어질 항목에는(초기값) 
+  <b>checked="checked" (checked)</b> 속성을 추가하면 됨.
+ </p>
+<p>방문 상담을 희망하는 시간은?<br>
+ <label> <input type="radio" name="a-time"> AM 9시 </label> <br>
+ <label> <input type="radio" name="a-time" checked> AM 10시 </label><br>
+ <label> <input type="radio" name="a-time"> AM 11시 </label> <br>
+ <label> <input type="radio" name="a-time"> AM 12시 </label>
+</p>
+
+<label><input type="radio" name="gender" checked="checked">female </label>
+<label><input type="radio" name="gender">male</label>
+<label><input type="radio" name="gender">other</label>
+
+
+<h4> 6. file 파일 전송용 상자 </h4>
+ <label>자격증 사본 <input type="file"> </label>
+
+
+ <h4>7. input type="hidden" - 숨겨진 데이터 전송용 </h4>
+ <input type="hidden" value="silver">
+
+
+<h4>8. select - (공간절약형의 객관식) 펼침목록 </h4>
+여러 항목을들 작은 공간에 넣어서 제시하는 객관식 폼요소. 드롭다운 리스트라고도 함. <br>
+size="" 속성으로 여러 개의 항목이 보이는 상자형으로 바꾸거나<br>
+multiple 속성으로 두 개 이상 선택 가능한 다중선택으로 바꾸거나 <br>
+optgruop 항목으로 여러 항목들을 주제별로 분류하여 그룹화 시킬 수도 있다.<br>
+초기값으로 설정하고 싶은 항목(option)에는 selected 속성을 추가하면 된다.<br>
+<select>
+  <option>에스프레소</option>
+  <option>아메리카노</option>
+</select>
+<p>
+select에 multiple(multipe="multiple") 추가<br>
+selected 는 미리 선택해놓는 태그<br>
+</p>
+
+ <p>select에 속성 size="4"를 추가   <br>
+ <select size="4">
+  <option>coffee</option> 
+  <option>green tea</option>
+ </select>
+
+<p>select에 속성 multiple (multiple="multiple") 추가 + <br>
+<p>option에 속성 selected (selected="selected") 추가 <br>
+<select multiple>
+  <option>얼그레이</option>
+  <option selected>잉글리시 블랙티</option>
+</select>
+
+ <select multiple title="multiple로 다중선택형박스 형태 + 
+   초기값 2개 이상 지정한 예">
+  <option>coffee</option> 
+  <option>green tea</option>
+  <option>red tea</option>
+  <option selected="selected">cocoa</option>
+  <option>milk</option>
+  <option selected="selected">juice</option>
+  <option>cocacola</option>
+  <option>water</option>
+ </select>
+
+<select>
+  <optgroup label="JSP">
+  <option>1교시</option>
+  <option>2교시</option>
+  <option>3교시</option>
+  <option>4교시</option>
+  </optgroup> 
+  <optgroup label="WEB">
+  <option>5교시</option>
+  <option>6교시</option>
+  <option>7교시</option>
+  <option>8교시</option>
+  </optgroup>
+</select>
+
+<h4>9.  input type="submit / reset / button " (전송 / 초기화 / 일반)  :  </h4>
+<input type="submit" value="OK">
+<input type="reset" value="NO">
+
+<input type="button" value="Button" onclick="alert('Hello')">
+
+<p>
+ input type="submit" 으로 입력한 데이터를 서버로 전송하는 역할의 버튼 생성<br>
+ input type="reset" 으로 페이지를 초기화 하는 역할의 버튼 생성. <br>
+
+ input type="button"은 폼과 무관한 (스크립트로 기능추가) 일반 버튼 생성.<br>
+ 버튼들은 모두 value 속성의 값으로 버튼 위의 글자를 변경 할 수 있음
+</p>
+
+<hr>
+
+<h4>10.  input type="image" : 전송버튼 역할의 이미지 </h4>
+
+<p>
+ src 속성으로 이미지의 경로를 지정한다. <br>
+ width="n" 가로길이, height="n" 세로길이
+</p>
+
+<input type="image" src="smiley.gif"><br>
+<label>ID <input type="text"></label><br>
+<lable>PW <input type="password"></label><br>
+Login 
+<input type="image" src="accept.png" width="30">
+
+<hr>
+<h4> 11. button ... /button : 전송하는 역할의 버튼 </h4>
+<p>
+button ... /button 으로 입력한 데이터를 서버로 전송하는 역할의 버튼 생성. <br>
+button type="reset" 으로 페이지를 초기화 하는 역할의 버튼 생성. <br>
+button type="button"은 폼과 무관한 (스크립트로 기능추가) 일반 버튼 생성. <br>
+버튼 위의 글자는 시작과 종료 태그 사이에 적어준다. <br>
+* 시작과 종료태그 사이에는 다른 태그를 추가해서 아이콘을 넣거나 이미지를 넣거나 <br>
+글자의 형태를 바꾸는 등의 추가 작업이 가능함.
+</p>
+
+<button>보내기</button><br>
+<button><img src="accept.png" width="20">회원가입</button><br>
+
+<button type="reset">Cancel</button><br>
+<button type="button" onclick="alert('hello')">Click</button><br>
+
+</form>
+
+
+</body>
+
+
+</html>

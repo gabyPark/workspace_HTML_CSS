@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+#wrap{
+/* 	border:1px solid; */
+	margin: 0 auto;
+	width:1100px;
+	height: 900px;	
+}
+
+.clear{
+   clear: both;
+}
+
+a{
+	text-decoration: none;
+	color: #636363;
+}
+
+/* 상단바 */
+header{	
+/* 	border:1px solid; */
+	width: 1100px;
+	height:100px;
+}
+
+#menu {
+	float: right;
+	color: #5a5a5a;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 15px;
+	font-size: 0.9em;
+}
+
+#menu a{
+	text-decoration: none;
+}
+#menu a:hover{
+	text-decoration: underline;
+}
+
+#search1{
+	float: right;
+	margin-top: 15px;
+	margin-right: 5px;
+}
+
+#search2{
+	float: right;
+	margin-top: 15px;
+}
+
+#logo {
+	clear: both;
+	position: relative;
+	top:-20px;
+}
+
+
+#top_menu{
+	padding-left:150px;
+	text-align: center;
+}
+#top.m1:HOVER{
+	color: red;
+}
+#top li{
+	float: left;
+	text-decoration: none;
+	list-style: none;
+	display: block;
+	font-size: 1.5em;
+	color: black;
+	display: block;
+	text-align: center;	
+	margin: 0 0 5px 100px;
+	font-weight: bold;
+	position: relative;
+	top:-90px;
+}
+#top li a{
+	text-decoration: none;	
+}
+#top li.m1 a:HOVER{
+	color: #800000
+}
+#top li.m2 a:HOVER{
+	color: #FFBB00
+}
+#top li.m3 a:HOVER{
+	color: #0054FF
+}
+#top li.m4 a:HOVER{
+	color: #8000ff
+}
+#pha{
+	text-align: right;
+	margin-top: -90px;
+}
+
+
+
+/* 본문 */
+.mainlft {
+/* 	border: 1px solid;  */
+	float: left;
+	margin-top: -77px;
+}
+
+.cent{
+	width : 241px;
+	float: left;
+	height: 600px;
+}
+
+.cent1{
+	float : left;
+	background-image:url("../img/img_main_gnb01.jpg");
+	width: 250px;
+	height: 250px;
+	background-repeat: no-repeat; 
+	margin-top: -77px;	
+	position:relative;
+}	
+
+.cent1 p {
+	margin-left: 30px;
+	font-size: 2em;
+	color: #fff;
+}
+
+.cent1 li:hover{
+	text-decoration: underline;
+}
+
+.cent2{
+	float : left;
+	background-image: url("../img/moonhwa.png");
+	width: 250px;
+	height: 250px;
+	background-repeat: no-repeat;
+	position: relative;
+	top:-50px;
+}	
+.cent3{
+	float : left;
+	background-image: url("../img/jepoom.png");
+	width: 250px;
+	height: 250px;
+	background-repeat: no-repeat;
+	position: relative;
+	top:-100px;
+}
+
+.cent4{
+	float : left;
+	background-image: url("../img/gogaeck.png");
+	width: 250px;
+	height: 250px;
+	background-repeat: no-repeat;
+	position: relative;
+	top:-150px;
+}
+
+.cent li {
+	list-style: url("../img/bu_arrow_gnb01.gif");
+}
+
+
+.main_right{
+	float: right;
+	margin-top: -77px;		
+	height: 600px;
+}
+
+
+/* 푸터 */
+
+.footer1{
+	text-align: left;
+	margin-top: 20px;
+}
+
+.footer2{
+	float : right;
+	text-align: right;
+
+	
+}
+.footer3{
+	text-align: left;
+}
